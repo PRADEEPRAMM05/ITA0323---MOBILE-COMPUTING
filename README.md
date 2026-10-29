@@ -38,9 +38,3 @@ ITA0323---MOBILE-COMPUTING/
     ├── exp 9/      # GSM Security & Cell Structures
     └── exp 10/     # Multiple Access Techniques
 ```
-
----
-
-## 👤 Author
-
-- **Pradeep R** ([@PRADEEPRAMM05](https://github.com/PRADEEPRAMM05))

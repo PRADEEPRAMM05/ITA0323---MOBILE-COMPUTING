@@ -19,7 +19,7 @@ This repository houses the complete theoretical derivations, architecture bluepr
 | **[Assignment 3/](Assignment%203/)** | **CO3** | **Wireless Networks, Mobility Management & Routing Protocols**: 802.11 Infrastructure vs IBSS (Ad-Hoc), CSMA/CA with RTS/CTS, Mobile IP (HA, FA, CoA, triangular routing vs route optimization, reverse tunneling), Cellular IP micro-mobility, DSDV loop-free proactive routing, and reactive AODV/DSR simulation. | 7 Tasks |
 | **[Assignment 4/](Assignment%204/)** | **CO4** | **Mobile Application Environments & OS Architecture**: Multi-layered MobileOS repair (Kernel, HAL, Native Libs, ART, Framework), architectural comparison of Android vs iOS vs Windows, Dalvik vs ART runtime analysis (AOT/JIT, compacting GC), mobile security forensics, and power management (Doze Mode, App Standby). | 6 Tasks |
 | **[Assignment 5/](Assignment%205/)** | **CO5** | **Android Features, Background Services & Performance Engineering**: Constraint-aware service orchestration (Foreground Services vs WorkManager), UI thread single-thread rule & ANR prevention, Offline-First Repository pattern, computation offloading energy trade-off model, working Java background suite, and 60/120 fps graphics budgeting. | 9 Tasks |
-| **[Mobile Computing/](Mobile%20Computing/)** | **Lab Practical** | **Laboratory Experiments 01 to 10**: End-to-end user interfaces, architectural diagrams, call routing flows, handoff captures, and protocol stack previews. | 10 Experiments |
+| **[Mobile Computing/](Mobile%20Computing/)** | **Lab Practical** | **Laboratory Experiments 01 to 27**: Comprehensive laboratory suite encompassing Figma UI/network architectures (Exp 01–15), computational wireless physical layer simulations (Exp 16–21), and protocol dissections / OMNeT++ discrete-event network models (Exp 22–27). | 27 Experiments |
 
 ---
 
@@ -85,7 +85,7 @@ ITA0323---MOBILE-COMPUTING/
 │   ├── TaskB3/ (UI / Graphics 60/120 FPS Budgeting & Overdraw Elimination)
 │   └── TaskB4/ (Production Architecture Sign-Off & Telemetry Specification)
 │
-└── Mobile Computing/                         # Laboratory Experiments 01 to 10
+└── Mobile Computing/                         # Laboratory Experiments 01 to 27
     ├── exp 1/ (Evolution of Cellular Systems - Screenshots & Previews)
     ├── exp 2/ (Mobile Application UI & Workflow)
     ├── exp 3/ (GSM Network Switching Subsystem NSS)
@@ -95,7 +95,24 @@ ITA0323---MOBILE-COMPUTING/
     ├── exp 7/ (Network Performance & Signal Quality Monitoring)
     ├── exp 8/ (Public Land Mobile Network PLMN & Roaming)
     ├── exp 9/ (GSM Security & Cell Architecture)
-    └── exp 10/ (Multiple Access Techniques)
+    ├── exp 10/ (Multiple Access Techniques)
+    ├── exp 11/ (Figma: GSM Connect Mobile App Prototype)
+    ├── exp 12/ (Figma: Cellular Network Performance Monitoring UI)
+    ├── exp 13/ (Figma: Multilingual Profile & Travel Guide App)
+    ├── exp 14/ (Figma: YONO SBI Mobile Banking MFA Authentication)
+    ├── exp 15/ (Figma: Mobile IP Architectural Flaws & Triangular Routing)
+    ├── exp 16/ (Python: Free-Space Path Loss & Received Power Calculator)
+    ├── exp 17/ (Python: Co-Channel Frequency Reuse & S/I Ratio Analysis)
+    ├── exp 18/ (Python: Erlang-B Traffic Capacity & Blocking Probability)
+    ├── exp 19/ (Python: Handoff Hysteresis & Shadowing Dynamics Simulator)
+    ├── exp 20/ (Python: CDMA Walsh Code Orthogonality, Spreading & BER)
+    ├── exp 21/ (Python: OFDMA Downlink Round-Robin vs Proportional Fair)
+    ├── exp 22/ (Python: Cellular Protocol Stack Dissector - GSM/GTP/S1AP/NGAP)
+    ├── exp 23/ (OMNeT++ / Python: Mobile IP Signaling & Triangular Routing)
+    ├── exp 24/ (Python: MANET Routing Protocol Evaluation - DSDV vs AODV)
+    ├── exp 25/ (Python: ICMP Network Packet Trace & Protocol Analyzer)
+    ├── exp 26/ (Python: Cellular Network Dynamic Performance Telemetry)
+    └── exp 27/ (OMNeT++ / Simu5G: 5G NR Multi-eNodeB Handover Simulation)
 ```
 
 ---
@@ -138,6 +155,25 @@ javac com/university/mobile/repository/OfflineRepository.java com/university/mob
 
 cd "../../../Assignment 5/TaskB2"
 javac -cp "../TaskB1/src" AdversarialLoadSimulator.java && java -cp ".:../TaskB1/src" com.university.mobile.test.AdversarialLoadSimulator
+```
+
+### 6. Mobile Computing Laboratory Simulations (Experiments 16 to 27)
+```bash
+# Physical layer and capacity simulations (Exp 16 - 21)
+python3 "Mobile Computing/exp 16/exp16_fspl.py"
+python3 "Mobile Computing/exp 17/exp17_reuse.py"
+python3 "Mobile Computing/exp 18/exp18_erlangb.py"
+python3 "Mobile Computing/exp 19/exp19_handoff.py"
+python3 "Mobile Computing/exp 20/exp20_cdma.py"
+python3 "Mobile Computing/exp 21/exp21_ofdma.py"
+
+# Protocol dissection and OMNeT++ network architectures (Exp 22 - 27)
+python3 "Mobile Computing/exp 22/exp22_protocol_dissector.py"
+python3 "Mobile Computing/exp 23/exp23_mobile_ip.py"
+python3 "Mobile Computing/exp 24/exp24_manet_routing.py"
+python3 "Mobile Computing/exp 25/exp25_traffic_analyzer.py"
+python3 "Mobile Computing/exp 26/exp26_cellular_perf.py"
+python3 "Mobile Computing/exp 27/exp27_simu5g_handover.py"
 ```
 
 ---
